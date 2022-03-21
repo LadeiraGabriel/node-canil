@@ -1,4 +1,4 @@
-:root {
+ :root {
     --pagebg: #FFF;
     --main: #102581;
     --bglink: rgba(0, 0, 0, 0.3);
@@ -160,4 +160,4 @@ footer {
     .list {
         grid-template-columns: 1fr;
     }
-}
+} 

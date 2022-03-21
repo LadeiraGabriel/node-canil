@@ -1,4 +1,4 @@
-import {Router} from 'express';
+import {Router, Request, Response} from 'express';
 import * as homeController from '../controllers/pageController';
 import * as searchController from '../controllers/searchController'
 
@@ -12,5 +12,8 @@ router.get('/fishes',homeController.fishes);
 
 router.get('/search',searchController.search);
 
-
+router.use((req:Request, res: Response)=>{
+   
+    res.render('pages/page')
+})
 export default router
